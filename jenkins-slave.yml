@@ -1,0 +1,6 @@
+- name: jenkins-slave
+  hosts: slave
+  remote_user: vagrant
+  sudo: True
+  roles:
+    - { role: jenkins-master, setup_as_slave: true }
