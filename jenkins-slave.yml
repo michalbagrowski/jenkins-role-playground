@@ -3,4 +3,4 @@
   remote_user: vagrant
   sudo: True
   roles:
-    - { role: jenkins-master, setup_as_slave: true }
+    - { role: jenkins-slave }
